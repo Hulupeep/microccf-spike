@@ -182,6 +182,8 @@ The service uses a separate system user and no write paths outside:
 
 ## Recommendation
 
+Recommendation token: `GO_ARCHITECTURE_A`.
+
 Proceed with the Seed-hosted architecture track, but treat these as required
 follow-up tickets before canonical CCF Gate C:
 
