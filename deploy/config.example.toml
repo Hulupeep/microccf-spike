@@ -1,0 +1,14 @@
+[seed]
+endpoint = "https://127.0.0.1:8443"
+token_path = "/etc/microccf/token"
+allow_invalid_certs = true
+
+[server]
+bind = "0.0.0.0:8081"
+
+[loop]
+poll_interval_ms = 30000
+http_timeout_ms = 2000
+
+[logging]
+level = "info"

@@ -1,0 +1,20 @@
+[Unit]
+Description=microCCF throwaway Seed deployment spike
+After=network-online.target cognitum-agent.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=microccf
+Group=microccf
+ExecStart=/opt/microccf/microccf --config /etc/microccf/config.toml
+Restart=always
+RestartSec=2
+NoNewPrivileges=true
+ProtectSystem=full
+ProtectHome=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
+

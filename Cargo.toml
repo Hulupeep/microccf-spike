@@ -1,0 +1,24 @@
+[package]
+name = "microccf"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "Throwaway Cognitum Seed deployment spike. Fake math. Real infrastructure."
+repository = "https://github.com/Hulupeep/microccf-spike"
+
+[[bin]]
+name = "microccf"
+path = "src/main.rs"
+
+[dependencies]
+axum = "0.7.9"
+clap = { version = "4.5.48", features = ["derive"] }
+reqwest = { version = "0.12.23", default-features = false, features = ["json", "rustls-tls"] }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
+thiserror = "2.0.16"
+tokio = { version = "1.47.1", features = ["macros", "rt-multi-thread", "signal", "time"] }
+toml = "0.8.23"
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.20", features = ["env-filter"] }
+
